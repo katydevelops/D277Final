@@ -6,12 +6,12 @@ body {
 
 header {
     background-color: #333;
+    height: 80x;
+    width: 100%;
+    position: fixed;
     color: #fff;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-    padding: 10px;
+    top: 0;
+    z-index: 1;
 }
 
 .logo img {
@@ -32,8 +32,13 @@ nav li {
     margin-right: 20px;
 }
 
-nav a {
-    color: #fff;
+nav {
+    background-color: #333;
+    height: 40px;
+    width: 100%;
+    position: fixed;
+    top: 80px;
+    z-index: 1;
     text-decoration: none;
 }
 
