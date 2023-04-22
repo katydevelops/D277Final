@@ -72,11 +72,17 @@ p {
 }
 
 .main-img {
+    max-width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+/* .main-img {
     flex: 3;
     float: right;
     max-width: 50%;
     height: auto;
-}
+} */
 
 .bottom-aside {
     margin-top: 50px;
