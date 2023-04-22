@@ -79,10 +79,6 @@ p {
 }
 
 aside {
-    bottom: 0;
-    right: 0;
-    width: 300px;
-    height: 200px;
     background-color: #f5f5f5;
     padding: 20px;
     text-align: center;
