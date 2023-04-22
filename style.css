@@ -90,7 +90,8 @@ p {
 
 .bottom-aside {
     margin-top: 50px;
-    display: flex;
+    flex-direction: column;
+    position: fixed;
     justify-content: center;
     align-items: center;
     width: 100%;
