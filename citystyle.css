@@ -1,0 +1,125 @@
+body {
+    margin: 0;
+    /* to remove extra space around border of website  */
+    padding: 0;
+    /* to remove extra space around border of website  */
+}
+
+header {
+    display: flex;
+    height: 50px;
+    background-color: #292727;
+    padding: 20px;
+}
+
+.logo {
+    order: 1;
+    margin-top: -20px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+nav {
+    background-color: #646363;
+    height: 30px;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    /* to remove bullet style */
+}
+
+nav a {
+    color: white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-transform: uppercase;
+    text-decoration: none;
+    /* to remove underlined style */
+    margin: 30px;
+    /* to space out the nav bar links */
+}
+
+/* This is my required pseudoclass */
+nav a:hover {
+    color: rgb(72, 215, 122);
+    opacity: 70%;
+}
+
+h1 {
+    font-size: 4rem;
+    font-weight: bold;
+    font-family: Arial, sans-serif;
+    color: #333;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-height: 80vh;
+    overflow-y: auto;
+}
+
+.image-container {
+    display: flex;
+    justify-content: center;
+}
+
+.image-container img {
+    width: 70%;
+}
+
+.aside-container {
+    margin-top: 10px;
+}
+
+.aside {
+    max-width: 300px;
+    margin-top: 10px;
+    background-color: #d9ece5;
+    border: 1px dotted #abcfc2;
+    border-radius: 15px;
+    padding: 10px;
+    font-size: 12px;
+    line-height: 1;
+    text-align: center;
+
+}
+
+.text-container {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 20px;
+    max-width: 700px;
+}
+
+footer {
+    position: fixed;
+    /* stick the links to the very bottom of the page */
+    bottom: 0;
+    width: 100%;
+    /* stretch the padding 100% width of the entire page */
+}
+
+.footer-container {
+    position: center;
+    display: flex;
+    justify-content: center;
+}
+
+.footer-container ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.footer-container li {
+    margin-left: 40px;
+}
