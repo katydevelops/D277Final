@@ -78,6 +78,14 @@ p {
     height: auto;
 }
 
+.bottom-aside {
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
 aside {
     background-color: #f5f5f5;
     padding: 20px;
