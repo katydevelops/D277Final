@@ -26,6 +26,7 @@ nav {
     display: flex;
     justify-content: center;
     align-items: center;
+    overflow-x: auto; /* to make the nav bar more responsive when scaled down */
 }
 
 nav ul {
