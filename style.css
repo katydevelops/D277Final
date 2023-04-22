@@ -1,104 +1,113 @@
-header {
-    background-color: #333;
-    height: 30x;
-    width: 100%; 
-    position: fixed;
-    color: #fff;
-    top: 0;
-    z-index: 1;
-}
-
 body {
     margin: 0;
+    /* to remove extra space around border of website  */
     padding: 0;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif, sans-serif;
+    /* to remove extra space around border of website  */
 }
 
+header {
+    display: flex;
+    height: 50px;
+    background-color: #292727;
+    padding: 20px;
+}
 
-.logo img {
-    width: 100px;
-    height: 100px;
-    object-fit: contain;
+.logo {
+    order: 1;
+    margin-top: -20px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 nav {
-    background-color: #686464;
-    height: 40px;
-    width: 100%;
-    position: fixed;
-    top: 100px;
-    text-decoration: none;
+    background-color: #646363;
+    height: 30px;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 nav ul {
     display: flex;
     list-style: none;
-    margin: 0;
-    padding: 0;
+    /* to remove bullet style */
 }
 
-nav li {
-    margin-left: 20px;
-    margin-top: 10px;
+nav a {
+    color: white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-transform: uppercase;
+    text-decoration: none;
+    /* to remove underlined style */
+    margin: 30px;
+    /* to space out the nav bar links */
 }
 
-main {
+/* This is my required pseudoclass */
+nav a:hover {
+    color: rgb(72, 215, 122);
+    opacity: 70%;
+}
+
+.container {
     display: flex;
-    justify-content: center;
+    height: 70vh;
+    /* scale down to 70% of screen size  */
+}
+
+.left-side {
+    display: flex;
     align-items: center;
-    height: 100vh;
+    flex: 1;
+    margin: 80px;
 }
 
-section {
+.text-container {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: content;
-    max-width: 1200px;
-    width: 100%;
-    margin: 0 1em;
-}
-
-.content {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
-    max-width: 800px;
-}
-
-p {
-    font-size: 18px;
-    line-height: 1.5;
-}
-
-.main-img {
-    max-width: 50%;
-    height: auto;
-    /* object-fit: cover; */
-}
-
-.main-img img {
-    max-width: 50%;
-}
-
-/* .main-img {
-    flex: 3;
-    float: right;
-    max-width: 50%;
-    height: auto;
-} */
-
-.bottom-aside {
-    margin-top: 50px;
     flex-direction: column;
-    position: fixed;
     justify-content: center;
-    align-items: center;
-    width: 100%;
+    flex: 1;
 }
 
-aside {
-    background-color: #f5f5f5;
-    padding: 20px;
-    text-align: center;
+.image-container {
+    flex: 1;
+    margin: 30px;
+}
+
+.image-container img {
+    width: 90%;
+}
+
+h1 {
+    font-size: 4rem;
+    font-weight: bold;
+    font-family: Arial, sans-serif;
+    color: #333;
+}
+
+footer {
+    position: fixed;
+    /* stick the links to the very bottom of the page */
+    left: 0;
+    bottom: 0;
+    padding: 2px;
+    width: 100%;
+    /* stretch the padding 100% width of the entire page */
+}
+
+.footer-container {
+    display: flex;
+    justify-content: center;
+}
+
+.footer-container ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.footer-container li {
+    margin-left: 40px;
 }
