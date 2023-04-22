@@ -96,7 +96,7 @@ h1 {
     text-align: center;
     margin-left: auto;
     margin-right: auto;
-    padding: 20px;
+    scroll-padding-top: 20px;
     max-width: 700px;
 }
 
@@ -106,12 +106,14 @@ footer {
     bottom: 0;
     width: 100%;
     /* stretch the padding 100% width of the entire page */
+    margin-top: 30px;
 }
 
 .footer-container {
     position: center;
     display: flex;
     justify-content: center;
+    background-color: white;
 }
 
 .footer-container ul {
@@ -124,4 +126,13 @@ footer {
 .footer-container li {
     margin-left: 20px;
     margin-right: 20px;
+    margin-bottom: auto;
+    margin-top: auto;
+}
+
+/* to make the icons in the footer hidden at small viewports for responsiveness */
+@media screen and (max-width: 700px) {
+    .footer-container {
+        display: none;
+    }
 }
