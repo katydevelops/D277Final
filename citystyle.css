@@ -46,10 +46,12 @@ nav a {
 }
 
 /* This is my required pseudoclass */
-nav a:hover {
-    color: rgb(72, 215, 122);
-    opacity: 70%;
-}
+    nav a:hover {
+        color: rgb(72, 215, 122);
+        opacity: 70%;
+        transition: .1s ease-in-out, color .2s ease-in-out;
+        /* add animation to link hover */
+    }
 
 h1 {
     font-size: 4rem;
