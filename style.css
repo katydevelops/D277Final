@@ -66,12 +66,20 @@ nav a:hover {
     margin: 80px;
 }
 
+
 .text-container {
     display: flex;
     flex-direction: column;
     justify-content: center;
     flex: 1;
     margin-top: 60px;
+}
+
+/* to prevent the overflow of text when viewport shrinks */
+@media screen and (max-width: 800px) {
+    .text-container p {
+        display: none;
+    }
 }
 
 .bold-font {
