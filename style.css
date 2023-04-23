@@ -74,7 +74,6 @@ nav a:hover {
     margin-top: 60px;
 }
 
-
 .bold-font {
     font-family: 'Courier New', Courier, monospace;
     font-weight: bold;
@@ -90,6 +89,7 @@ nav a:hover {
     width: 90%;
 }
 
+/* to make vertical more responsive with page layout */
 #vertical-img {
     max-height: 500px;
     width: 300px;
@@ -109,11 +109,13 @@ nav a:hover {
 }
 
 h1 {
-    font-size: 4rem;
+    letter-spacing: -3;
+    font-size: 60px;
     font-weight: bold;
     font-family: Arial, sans-serif;
     color: #333;
     padding-top: 20px;
+    text-align: center;
 }
 
 h2 {
@@ -124,10 +126,19 @@ h2 {
 }
 
 
-/* to make H1 title responsive when the viewport shrinks */ 
+/* to make H1 title overflow less when you shrink the viewport */ 
+@media screen and (max-width: 1150px) {
+    h1 {
+        font-size: 20px;
+        margin-top: 40px;
+        overflow-x: auto;
+    }
+}
+
+/* to make H1 title responsive when the viewport shrinks */
 @media screen and (max-width: 900px) {
     h1 {
-        font-size: 2rem;;
+        font-size: 2rem;
     }
 }
 
@@ -179,6 +190,7 @@ aside {
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
+/* to make aside hidden when screen shrinks for a more responsive design */
 @media screen and (max-width: 900px) {
     aside {
         display: none;

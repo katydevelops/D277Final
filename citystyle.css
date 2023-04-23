@@ -15,15 +15,15 @@ header {
 .logo {
     order: 1;
     margin-top: -20px;
-    margin-left: auto;
-    margin-right: auto;
+    margin-left: auto; /* to make logo centered in header */
+    margin-right: auto; /* to make logo centered in header */
 }
 
 nav {
     background-color: #646363;
     height: 30px;
     padding: 10px;
-    display: flex;
+    display: flex; /* use flex box to center links across nav bar */
     justify-content: center;
     align-items: center;
     overflow-x: auto; /* to make the nav bar more responsive when scaled down */
@@ -151,11 +151,11 @@ input {
 .login-img {
     margin-top: 40px;
     max-height: 90px;
-    float: left;
+    float: left; /* to make image float to the left of the paragraph */
 }
 
 .login-p {
-    display: inline-block;
+    display: inline-block; /* to make the paragraph in line with left floating image */
     width: 300px;
     margin-top: 20px;
 }
