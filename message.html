@@ -30,27 +30,27 @@
 		<section>
 			<div class="container">
 				<div class="page-title">
-					<h1>CONTACT US!</h1>
+					<h1>MESSAGE US!</h1>
 				</div>
-				<div class="contact-container">
+				<div class="message-container">
                     <form action="mailto:youremail@example.com" method="post" enctype="text/plain">
                     <label for="name">First Name:</label>
-                    <input type="text" id="first-name" name="first-name"><br><br>
+                    <input type="text" id="first-name" name="first-name" placeholder="First Name"><br><br>
 
                     <label for="name">Last Name:</label>
-                    <input type="text" id="last-name" name="last-name"><br><br>
+                    <input type="text" id="last-name" name="last-name" placeholder="Last Name"><br><br>
 
                     <label for="email">Email:</label>
-                    <input type="email" id="email" name="email"><br><br>
+                    <input type="email" id="email" name="email" placeholder="Email"><br><br>
 
                         <label for="email">Confirm Email:</label>
-                    <input type="email" id="confirm-email" name="confirm-email"><br><br>
+                    <input type="email" id="confirm-email" name="confirm-email" placeholder="Confirm Email"><br><br>
 
                     <label for="subject">Subject:</label>
-                    <input type="text" id="subject" name="subject"><br><br>
+                    <input type="text" id="subject" name="subject" placeholder="Message Subject "><br><br>
 
                     <label for="message">Message:</label>
-                    <textarea id="message" name="message"></textarea><br><br>
+                    <textarea id="message" name="message" placeholder="Enter Your Message"></textarea><br><br>
 
                     <input type="submit" value="Send">
                     </form>
@@ -82,15 +82,19 @@
 					</li>
 
 					<li>
-						<i
-							class="fa-solid fa-circle-user"
-							style="color: #565658"
-						></i>
+						<a href="user.html" target="_blank">
+							<i
+								class="fa-solid fa-circle-user"
+								style="color: #565658"
+							></i>
+						</a>
 					</li>
 				</ul>
 			</div>
 		</footer>
-		<!-- Link to FontAwesome to use font icons in the footer-->
+		<!-- Link to js code to verify email field in form -->
+		<script src="./js/script.js"></script>
+		<!-- Link to FontAwesome to use font icons in the footer -->
 		<script
 			src="https://kit.fontawesome.com/b4d6758434.js"
 			crossorigin="anonymous"

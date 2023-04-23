@@ -160,6 +160,18 @@ input {
     margin-top: 20px;
 }
 
+.gallery-container {
+    max-width: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.gallery-container  img{
+    width: 600px;
+}
+
 footer {
     position: fixed;
     /* stick the links to the very bottom of the page */
