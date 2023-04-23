@@ -3,6 +3,8 @@ body {
     /* to remove extra space around border of website  */
     padding: 0;
     /* to remove extra space around border of website  */
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    
 }
 
 header {
@@ -69,6 +71,13 @@ nav a:hover {
     flex-direction: column;
     justify-content: center;
     flex: 1;
+    margin-top: 60px;
+}
+
+.bold-font {
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+    text-decoration: rgb(148, 209, 148) 1px wavy underline;
 }
 
 .image-container {
@@ -103,12 +112,52 @@ h1 {
     font-weight: bold;
     font-family: Arial, sans-serif;
     color: #333;
+    padding-top: 20px;
 }
 
+h2 {
+    font-size: 25px;
+    position: relative;
+    text-align: center;
+    color:rgb(68, 158, 99)
+}
+
+
 /* to make H1 title responsive when the viewport shrinks */ 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 900px) {
     h1 {
         font-size: 2rem;;
+    }
+}
+
+table {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+th {
+    text-align: center;
+    padding: 10px;
+    font-weight: bold;
+    font-size: 20px;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+tr {
+    text-align: center;
+    vertical-align: middle;
+    border: 1px solid #ddd;
+    padding: 10px;
+}
+
+td {
+    padding: 10px;
+}
+
+/* to hide table when viewport shrinks for mobile responsiveness */
+@media screen and (max-width: 900px) {
+    table {
+        display: none;
     }
 }
 
