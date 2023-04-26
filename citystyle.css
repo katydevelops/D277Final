@@ -140,6 +140,11 @@ aside {
     align-items: center;
 }
 
+.contact-aside {
+    margin-left: 80px;
+    max-width: 600px;
+}
+
 form {
     font-family: 'Courier New', Courier, monospace;
 }
