@@ -186,6 +186,14 @@ td {
     max-width: 150px;
 }
 
+/* Add aside container that is centered on main page */
+.index-aside-container {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+    max-width: 300px;
+}
+
 aside {
     margin-left: 10px;
     background-color: #d9ece5;
